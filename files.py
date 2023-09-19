@@ -5,7 +5,7 @@ from os.path import isfile, join
 
 sql = 'select 123'
 
-fut = civis.io.civis_to_csv('temp.csv', sql, 32)
+fut = civis.io.civis_to_csv('temp.csv', sql, 32, compression=None)
 
 fut.result()
 
